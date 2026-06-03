@@ -1,2 +1,3 @@
 #BOT or NOT
-This is the start of an Ai that could detect whether the owner of an instagram if is a real human or just a bot based on numerous factors
+This is the start of an Ai that could detect whether the mail was sent by a bot or by a real person hence the name bot or not
+
