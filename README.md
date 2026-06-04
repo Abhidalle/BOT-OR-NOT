@@ -6,8 +6,13 @@ I found this clean dataset form kaggle, to follow along you can download this fr
 https://www.kaggle.com/datasets/venky73/spam-mails-dataset/data
 (Note: This link takes you to the kaggle website)
 
+## System Architecture & Project Structure
+1. Text Preprocessing: Cleans up the text by removing useless words like "the" or "is" and cutting words down to their root form (like turning "running" into "run").
+2. Vectorization: Translates human words into a list of numbers so the computer can actually run math equations on the sentence.
+3. Classifier: An AI brain(THE MODEL) made of 50 mini-decision charts that look at the numbers, vote together, and calculate the exact confidence percentage.
+4. Frontend & Deployment: Streamlit runs the Python AI logic on a live server, while Vercel hosts a clean HTML front door page with a launch button that i built.
 ## AI Use Declaration
-I havent really used any AI in this project but on times when i was stuck and wasnt able to debug the issues.
+I havent really used any AI in this project but on times when i was stuck and wasnt able to debug the issues. But i did use some AI when i was looking for ways to make it a bit more functional(By asking it to suggest me 10 more ways this can be better and etc)
 
 
 
