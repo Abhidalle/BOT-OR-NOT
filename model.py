@@ -13,7 +13,7 @@ stopwords_set = set(stopwords.words("english"))
 # Load the saved pickle files from your folder
 model_file = open("pickel_files/model.pkl", "rb")
 clf = pickle.load(model_file)
-
+ 
 vectorizer_file = open("pickel_files/vectorizer.pkl", "rb")
 vectorizer = pickle.load(vectorizer_file)
 
@@ -32,7 +32,7 @@ if st.button("Analyze Text"):
         text = [stemmer.stem(word) for word in text if word not in stopwords_set]
         cleaned_input = " ".join(text)
 
-       
+    
         vectorized_input = vectorizer.transform([cleaned_input]).toarray()
 
 

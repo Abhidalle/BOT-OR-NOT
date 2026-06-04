@@ -10,3 +10,6 @@ https://www.kaggle.com/datasets/venky73/spam-mails-dataset/data
 I havent really used any AI in this project but on times when i was stuck and wasnt able to debug the issues.
 
 
+
+
+
