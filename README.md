@@ -15,6 +15,6 @@ https://www.kaggle.com/datasets/venky73/spam-mails-dataset/data
 I havent really used any AI in this project but on times when i was stuck and wasnt able to debug the issues. But i did use some AI when i was looking for ways to make it a bit more functional(By asking it to suggest me 10 more ways this can be better and etc)
 
 
-
+]
 
 

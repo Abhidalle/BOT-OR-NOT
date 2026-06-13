@@ -19,12 +19,13 @@ vectorizer = pickle.load(vectorizer_file)
 
 # Basic Front end part
 st.title("BOT-OR-NOT Detector")
-st.write("Paste an Instagram bio, comment, or email below to see if it was written by a bot or an actual person")
+st.info("**Model Details:** This AI is specifically trained to detect malicious social media bots, phishing attempts, and traditional spam. **Note:** It is NOT currently trained to detect modern Large Language Models (like ChatGPT) writing normal essays.")
+st.write("Paste an Instagram bio, comment, or email below to see if it was written for scamming you or its normal and not a spam")
 
 # Fixed indentation and removed the backslash here
 sample_choice = st.selectbox(
     "Try a sample or write your own:",
-    ["Write my own...", "Human Sample", "Spam Bot Sample"]
+    ["Write my own....(Please keep it a bit long)", "Human Sample", "Spam Bot Sample"]
 )
 
 default_text = ""
@@ -35,7 +36,7 @@ elif sample_choice == "Spam Bot Sample":
 
 user_input = st.text_area("Enter Text Here!", value=default_text)
 
-# When user clicks
+# When user clicks then lets make it analyze the text
 if st.button("Analyze Text"):
     if user_input:
         text = user_input.lower()
@@ -59,4 +60,4 @@ if st.button("Analyze Text"):
             st.success("SAFE: This text looks like it was written by a HUMAN and likely is not SPAM")
             st.write(f"**AI Confidence:** {confidence:.2f}%")
     else:
-        st.warning("You need to paste some text first!")
+        st.warning("You need to paste some text first!") 
